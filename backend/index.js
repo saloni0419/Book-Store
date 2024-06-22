@@ -11,11 +11,7 @@ app.use(express.json())
 
 // middleware for handling CORS policy
 // option 1 : allow all origins with default of cors (*)
-app.use(cors({
-    origin: ["https://deploy-mern-1whq.vercel.app"],
-    methods: ['POST', 'GET'],
-    credentials: true
-}))
+app.use(cors())
 // option 2 : allow custom origins
 // app.use(cors(
 //     {
